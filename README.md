@@ -4,7 +4,7 @@
  * github link: https://github.com/eitoi/plane-battle
 ************************************/
 
-var button = function(x, y, text, effect) {
+```var button = function(x, y, text, effect) {
     this.x = x;
     this.y = y;
     this.text = text;
@@ -107,4 +107,4 @@ var create_background = function() {
 draw = function() {
     create_background();
     test_b.draw();
-};
+};```
