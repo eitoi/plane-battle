@@ -1,7 +1,35 @@
 #plane-battle
+/************************************
+ * created by: Emmett Itoi
+ * github link: https://github.com/eitoi/plane-battle
+************************************/
 
-var level = 5;
+var button = function(x, y, text, effect) {
+    this.x = x;
+    this.y = y;
+    this.text = text;
+    this.effect = effect;
+};
+button.prototype.draw = function() {
+    fill(92, 90, 90);
+    rect(this.x, this.y, 70, 30);
+    
+    fill(255, 0, 0);
+    text(this.text, this.x + 10, this.y + 20);
+    mousePressed = function() {
+        if (mouseX > this.x && mouse X < this.x + 70 && mouseY > this.y && mouseY < this.y + 30) {
+            
+        }
+    };
+    this.effect();
+};
+var test_b = new button(200, 200, "test", function() {text("it worked", 200, 300);});
+var level = 0;
 var backgrounds = {
+    menu: function() {
+        background(0, 255, 26);
+        
+    },//menu(level 0)
     grass: function() {
         background(0, 255, 17);
         noStroke();
@@ -78,4 +106,5 @@ var create_background = function() {
 };
 draw = function() {
     create_background();
+    test_b.draw();
 };
